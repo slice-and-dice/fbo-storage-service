@@ -1,6 +1,5 @@
----
 applications:
 - name: fbo-storage-service
   command: node src/index.js
   memory: 256M
-buildpack: nodejs_buildpack
+  buildpack: nodejs_buildpack

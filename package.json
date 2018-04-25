@@ -1,0 +1,27 @@
+{
+  "name": "fbo-storage-service",
+  "version": "1.0.0",
+  "description": "contains db access layer for registering a new fbo, and retrieving info about stored fbos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slice-and-dice/fbo-storage-service.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/slice-and-dice/fbo-storage-service/issues"
+  },
+  "homepage": "https://github.com/slice-and-dice/fbo-storage-service#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "pg": "^7.4.1",
+    "sequelize": "^4.37.6",
+    "winston": "^2.4.2"
+  }
+}

@@ -1,7 +1,7 @@
 const Sequelize = require('sequelize');
 const winston = require('winston');
 
-const sequelize = new Sequelize(process.env.DATABASE_URL);
+const sequelize = new Sequelize(`${process.env.DATABASE_URL}?ssl=true`);
 
 sequelize
   .authenticate()

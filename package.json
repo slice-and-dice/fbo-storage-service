@@ -12,6 +12,9 @@
     "url": "git+https://github.com/slice-and-dice/fbo-storage-service.git"
   },
   "author": "",
+  "engines": {
+    "node": "8.11.1"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/slice-and-dice/fbo-storage-service/issues"

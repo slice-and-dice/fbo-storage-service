@@ -72,10 +72,10 @@ const FBO = db.define('fbo', {
     type: Sequelize.DATE
   },
   import_export: {
-    type: Sequelize.STRING
+    type: Sequelize.ARRAY(Sequelize.STRING)
   },
   supplies_to: {
-    type: Sequelize.STRING
+    type: Sequelize.ARRAY(Sequelize.STRING)
   },
   business_type: {
     type: Sequelize.STRING
@@ -140,8 +140,8 @@ FBO.sync({force: true}).then(() => {
     operator_contact_number: '123455',
     operator_email: 'kiran@gmail.com',
     trading_date: '2001-02-16',
-    import_export: 'Import',
-    supplies_to: 'B2C',
+    import_export: ['Import'],
+    supplies_to: ['B2C'],
     business_type: 'retailer',
     food_activities: 'open cooking',
     high_risk_activities: false,
